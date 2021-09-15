@@ -3,8 +3,7 @@ class ApplicationController < ActionController::Base
     # ログインしない場合、ログイン画面に遷移させてくれるコード
 
     before_action :configure_permitted_parameters, if: :devise_controller?
-    # beforeアクションのため、事前に実行が走り、指定したメソッドを呼び出す
-    
+    # beforeアクションのため、事前に実行が走り、指定したメソッドを呼び出す    
 
     private
     def configure_permitted_parameters
