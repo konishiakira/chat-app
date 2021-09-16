@@ -14,6 +14,10 @@ class RoomsController < ApplicationController
     # 書き方のことで、必要なパラメータを絞ることで、
     # 不要なパラメータのみ取得することができる
 
+    def index
+    end
+
+
     if @room.save
       redirect_to root_path
     else
